@@ -19,6 +19,10 @@
 </p>
 
 ---
+# ⚠️ K-ID BYPASS - CURRENTLY NOT FUNCTIONAL
+**UPDATE:** Both API Mode and Standalone Mode are **NOT WORKING**. Discord has patched their age verification system and this bypass method no longer functions. The tool is kept for archival/educational purposes only.
+
+---
 # UPDATE 4 - K-ID BYPASS NOW WORKING WITH DUAL MODE!
 The K-ID Bypass feature now has **TWO verification modes**:
 

@@ -479,34 +479,38 @@
 
     <div class="hp kid-panel" id="kid-panel">
       <div class="ht">k-ID Bypass<span class="ht-toggle">−</span></div>
-      <div style="font-size:10px;color:#707080;margin-bottom:6px">Verify your Discord account as adult using QR code</div>
+      <div style="font-size:10px;color:#f87171;margin-bottom:8px;padding:6px;background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.3);border-radius:4px;line-height:1.4">
+        ⚠️ CURRENTLY NOT FUNCTIONAL<br>
+        Both API and Standalone modes are not working. Discord has patched their verification system.
+      </div>
+      <div style="font-size:10px;color:#707080;margin-bottom:6px;opacity:0.5">Verify your Discord account as adult using QR code</div>
       
-      <div style="font-size:9px;color:#5a5a6a;margin-bottom:8px;line-height:1.4">
+      <div style="font-size:9px;color:#5a5a6a;margin-bottom:8px;line-height:1.4;opacity:0.5">
         1. Start Discord age verification<br>
         2. Choose "Face Scan" option<br>
         3. Scan/upload the QR code below
       </div>
       
-      <div style="display:flex;gap:6px;margin-bottom:8px">
-        <button class="cb" id="mode-api" style="flex:1;font-size:9px;padding:4px;background:rgba(100,220,255,0.2);border-color:#64dcff">API Mode</button>
-        <button class="cb" id="mode-standalone" style="flex:1;font-size:9px;padding:4px">Standalone</button>
+      <div style="display:flex;gap:6px;margin-bottom:8px;opacity:0.4;pointer-events:none">
+        <button class="cb" id="mode-api" style="flex:1;font-size:9px;padding:4px;background:rgba(100,220,255,0.2);border-color:#64dcff" disabled>API Mode</button>
+        <button class="cb" id="mode-standalone" style="flex:1;font-size:9px;padding:4px" disabled>Standalone</button>
       </div>
-      <div style="font-size:8px;color:#5a5a6a;margin-bottom:6px" id="mode-desc">Using kibty.town API (fast, may be patched)</div>
+      <div style="font-size:8px;color:#f87171;margin-bottom:6px" id="mode-desc">⚠️ Both modes are currently patched and non-functional</div>
       
-      <label style="font-size:10px;color:#a0a0b0">QR Code URL or Image:</label>
-      <input type="text" class="kid-input" id="kid-qr-url" placeholder="https://... or drop QR image" style="margin-bottom:4px" />
+      <label style="font-size:10px;color:#a0a0b0;opacity:0.4">QR Code URL or Image:</label>
+      <input type="text" class="kid-input" id="kid-qr-url" placeholder="https://... or drop QR image" style="margin-bottom:4px;opacity:0.4" disabled />
       
-      <label class="kid-btn" style="cursor:pointer;text-align:center;margin-top:4px;opacity:0.8;font-size:10px;padding:6px">
+      <label class="kid-btn" style="cursor:not-allowed;text-align:center;margin-top:4px;opacity:0.4;font-size:10px;padding:6px;pointer-events:none">
         📷 Upload QR Image
-        <input type="file" id="kid-qr-file" accept="image/*" style="display:none" />
+        <input type="file" id="kid-qr-file" accept="image/*" style="display:none" disabled />
       </label>
       
-      <button class="kid-btn" id="kid-verify" style="background:rgba(74,222,128,0.1);border-color:rgba(74,222,128,0.3);color:#4ade80">
-        ✓ Verify Account
+      <button class="kid-btn" id="kid-verify" style="background:rgba(248,113,113,0.1);border-color:rgba(248,113,113,0.3);color:#f87171;opacity:0.4;cursor:not-allowed" disabled>
+        ✗ Not Functional
       </button>
       
-      <div style="font-size:9px;color:#5a5a6a;margin-top:8px;line-height:1.4">
-        Status: <span id="kid-status" style="color:#64dcff">Ready</span>
+      <div style="font-size:9px;color:#f87171;margin-top:8px;line-height:1.4">
+        Status: <span id="kid-status" style="color:#f87171">Not Functional (Discord Patched)</span>
       </div>
       
       <div class="kid-output" id="kid-output"></div>
